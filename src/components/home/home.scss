@@ -1,0 +1,83 @@
+@import "../../global.scss";
+
+.home{
+    display: flex;
+    background: linear-gradient(
+        rgba(24, 24, 24, 0.9),
+        rgba(22, 22, 22, 0.8)),
+        url("../../../public/assets/html-tag.jpg") no-repeat center;
+    background-size: cover;
+    color: white;
+
+    .wrapper{
+        padding-left: 50px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        @include mobile{
+            padding-left: 10px;
+        }
+
+        h1{
+            font-size: 60px;
+            margin: 10px 0;
+
+            @include mobile{
+                font-size: 40px;
+            }
+        }
+        h2{
+            font-size: 35px;
+
+            @include mobile{
+                font-size: 22px;
+            }
+        }
+        h3{
+            font-size: 30px;
+
+            @include mobile{
+                font-size: 20px;
+            }
+
+            span{
+                font-size: inherit;
+                color: crimson;
+            }
+
+            .ityped-cursor{
+                animation: blink 1s infinite;
+            }
+
+            @keyframes blink {
+                50%{
+                    opacity: 1;
+                }
+                100%{
+                    opacity: 0;
+                }
+            }
+        }
+    }
+
+    a{
+        position: absolute;
+        bottom: 13px;
+        left: 47vw;
+
+        img{
+            width: 30px;
+            animation: arrowBlink 2s infinite;
+        }
+
+        @keyframes arrowBlink {
+            100%{
+                opacity: 0;
+            }
+        }
+    }
+
+}
+

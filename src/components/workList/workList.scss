@@ -1,0 +1,18 @@
+@import "../../global.scss";
+
+.workList{
+    font-size: 15px;
+    margin-right: 50px;
+    padding: 7px;
+    border-radius: 20px;
+    cursor: pointer;
+
+    @include mobile{
+        margin-right: 0;
+    }
+
+    &.active{
+        background: crimson;
+        color: white;
+    }
+}
