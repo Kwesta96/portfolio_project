@@ -9,7 +9,7 @@ export const Home = () => {
   useEffect(() => {
     init(textRef.current, {
       showCursor: true,
-      strings: ['Front End Developer', 'UX Designer', 'IT Consultant'],
+      strings: ['Web Developer', 'Mobile Developer', 'Front End Developer'],
       //typeSpeed:  100,
       backDelay:  1500,
       backSpeed: 60,
