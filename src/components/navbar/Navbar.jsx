@@ -14,7 +14,7 @@ export const Navbar = ({menuOpen, setMenuOpen}) => {
           <a href="#home" className='logo'>logo.</a>
           <div className="itemContainer">
             <Mail className="icon" />
-            <span>kwesta96@gmail.com</span>
+            <span>pk.owusu96@gmail.com</span>
           </div>
         </div>
         <div className="right">
